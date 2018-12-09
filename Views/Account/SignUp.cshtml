@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = "_Layout1";
+}
+
+<h2>Sign Up</h2>
+
+<form method="post" action="@Url.Action("", "")">
+
+	First Name:<input type="text" /><br />
+	Last Name:<input type="text" /><br />
+	Email Address:<input type="text" placeholder="example@example.com"/><br />
+	Phone:<input type="number" value="ex. 55555555555 "/><br />
+	Address:<input type="text" /><br />
+	City:<select>
+			<option>St.Thomas</option>
+			<option>St.John</option>
+			<option>St.Croix</option>
+		</select><br />
+	State:<select>
+			<option>U.S. Virgin Islands</option>
+		</select><br/>
+	Zip Code:<input type="number" /><br />
+	Password:<input type="password" /><br />
+	Confirm Password:<input type="password" /><br />
+
+	<input type="submit" value="Create Account" />
+</form>
+
+
